@@ -7,6 +7,16 @@
     </head>
     <body>
         <h1>Hello world</h1>
-        <p>This is sampel application!</p>
+        <p id="msg">This is sample application!</p>
+        <div>
+            <button onclick="doAction();">Click</button>
+        </div>
     </body>
+    <script>
+        var counter = 0;
+        function doAction() {
+            let p = document.querySelector("#msg");
+            p.textContent = "count: " + ++counter;
+        }
+    </script>
 </html>
